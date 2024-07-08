@@ -123,12 +123,12 @@ public:
             aux = aux->siguiente;
         }
     }
-    int getElement(int index)
+    T getElement(int index)
     {
         if (index < 0 || index >= quantityElements)
         {
             cerr << "Out of range" << endl;
-            return 404;
+            return T();
         }
         Node<T> *aux = _first;
         for (int i = 0; i < index && aux != nullptr; i++)
