@@ -20,6 +20,11 @@ struct Node
         this->dato = dato;
         this->siguiente = siguiente;
     }
+    Node(Node<T> *siguiente, T dato)
+    {
+        this->dato = dato;
+        this->siguiente = siguiente;
+    }
 };
 
 template <typename T>
