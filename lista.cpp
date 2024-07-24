@@ -97,7 +97,7 @@ public:
             aux = aux->siguiente;
         }
     }
-    void deleteByIndex(const int &index)
+    void delete(const int &index)
     {
         if (index < 0 || index >= quantityElements)
         {
