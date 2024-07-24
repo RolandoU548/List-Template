@@ -128,7 +128,7 @@ public:
             aux = aux->siguiente;
         }
     }
-    T getElement(int index)
+    T get(int index)
     {
         if (index < 0 || index >= quantityElements)
         {
