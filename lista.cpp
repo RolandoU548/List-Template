@@ -142,6 +142,19 @@ public:
         }
         return aux->dato;
     }
+        bool belongs(const T &value)
+    {
+        Node<T> *aux = _first;
+        while (aux != nullptr)
+        {
+            if (aux->dato == value)
+            {
+                return true;
+            }
+            aux = aux->siguiente;
+        }
+        return false
+    }
     void insert(const T &value, const int &index)
     {
         if (index < 0 || index > quantityElements)
