@@ -42,6 +42,13 @@ public:
         this->_first = _first;
         this->_last = _last;
     }
+    ~List()
+    {
+        while (_first != nullptr)
+        {
+            deleteNode(_first);
+        }
+    }
     Node<T> *first()
     {
         return _first;
@@ -142,7 +149,7 @@ public:
         }
         return aux->dato;
     }
-        bool belongs(const T &value)
+    bool belongs(const T &value)
     {
         Node<T> *aux = _first;
         while (aux != nullptr)
