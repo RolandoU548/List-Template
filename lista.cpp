@@ -160,7 +160,7 @@ public:
             }
             aux = aux->siguiente;
         }
-        return false
+        return false;
     }
     void insert(const T &value, const int &index)
     {
